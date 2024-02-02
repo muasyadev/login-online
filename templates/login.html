@@ -6,14 +6,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{% static 'login.css'%}">
-  <link href='{% static 'https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' %}' rel='stylesheet'>
-  <title>Login & Sign up</title>
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+  <link href='{% static "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" %}' rel='stylesheet'>
+  <title>Login &amp; Sign up</title>
 </head>
 
-<body src="{% static 'images/live.jpg' %}" >
+<body  >
+
   <div class="wrapper " id="loginform">
-    <form action="process-form.php" method="post">
+    <form action="#" method="post">
       <h1>Login</h1>
       <div class="input-box" >
         <input type="text" placeholder="Username" id="username-value">
@@ -39,8 +40,8 @@
         </a></p>
       </div>
     </form>
-  </div>
-  
+  </div> 
+ 
   <div class="wrapper signup-form" id="signform">
     <form action="" id="signupform">
       <h1>Sign up</h1>
@@ -77,8 +78,8 @@
 
 
   
-  <script src="{% static '/credentials.js' %}"></script>
-  <script src="{% static '/login.js' %}"></script>
+  <script src="{% static 'js/credentials.js' %}"></script>
+  <script src="{% static 'js/login.js' %}"></script>
   
 </body>
 </html>
