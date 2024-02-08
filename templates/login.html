@@ -14,7 +14,8 @@
 <body  >
 
   <div class="wrapper " id="loginform">
-    <form action="#" method="post">
+    <form action="#" method="POST">
+      {% csrf_token%}
       <h1>Login</h1>
       <div class="input-box" >
         <input type="text" placeholder="Username" id="username-value">
@@ -43,7 +44,7 @@
   </div> 
  
   <div class="wrapper signup-form" id="signform">
-    <form action="" id="signupform">
+    <form action="POST" id="signupform">
       <h1>Sign up</h1>
       <div class="input-box" >
         <input type="text" placeholder="Username" id="newusername-value">
@@ -53,7 +54,6 @@
         <input type="password" placeholder="password" id="newpassword-value">
         <i class='bx bxs-lock'></i>
       </div>
-      
       <div class="input-box" >
         <input type="text" placeholder="email account" id="email-value">
         <i class='bx bxs-user'></i>
