@@ -14,8 +14,9 @@
 <body  >
 
   <div class="wrapper " id="loginform" >
-    <form action="#" method="POST" >
+    <form action="#" method="POST" action="{% url 'login' %}">
       {% csrf_token%}
+      {{ login_form.as_p }}
       <h1>Login</h1>
       <div class="input-box" >
         <input type="text" placeholder="Username" id="username-value">
@@ -44,8 +45,9 @@
   </div> 
  
   <div class="wrapper signup-form" id="signform">
-    <form action="POST" id="signupform" >
+    <form action="POST" id="signupform" action="{% url 'signup' %}" >
       {% csrf_token %}
+      {{ signup_form.as_p }}
       <h1>Sign up</h1>
       <div class="input-box" >
         <input type="text" placeholder="Username" id="newusername-value">
